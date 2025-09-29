@@ -1,0 +1,50 @@
+const totalCards = 10;
+let tries = 0;
+let targetCardId;
+let cardChoices = [];
+
+function startGame() {
+    tries = 0;
+    document.getElementById('tries').textContent = tries;
+    document.getElementById('medal').textContent = '-';
+
+    targetCardId = Math.floor(Math.random() * totalCards) + 1;
+    document.getElementById('targetCard').src = `img/${targetCardId}.png`;
+
+    const choices = new Set();
+    choices.add(targetCardId);
+    while (choices.size < 3) {
+        choices.add(Math.floor(Math.random() * totalCards) + 1);
+    }
+    cardChoices = [...choices].sort(() => Math.random() - 0.5);
+
+    const cardsContainer = document.getElementById('cardsContainer');
+    cardsContainer.innerHTML = '';
+    cardChoices.forEach(id => {
+        const card = document.createElement('img');
+        card.className = 'card';
+        card.dataset.id = id;
+        card.src = 'img/back.png';
+        card.addEventListener('click', () => flipCard(card));
+        cardsContainer.appendChild(card);
+    });
+}
+
+function flipCard(card) {
+    if (!card.src.includes('back.png')) return;
+
+    card.src = `img/${card.dataset.id}.png`;
+    tries++;
+    document.getElementById('tries').textContent = tries;
+
+    if (parseInt(card.dataset.id) === targetCardId) {
+        if (tries === 1) document.getElementById('medal').textContent = '금메달';
+        else if (tries === 2) document.getElementById('medal').textContent = '은메달';
+        else document.getElementById('medal').textContent = '동메달';
+    }
+}
+
+document.getElementById('restartBtn').addEventListener('click', startGame);
+
+// 게임 시작
+startGame();
