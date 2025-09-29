@@ -6,7 +6,7 @@ body {
 
 #game {
     margin: 50px auto;
-    width: 300px;
+    width: 350px;
 }
 
 #cardsContainer {
@@ -16,7 +16,7 @@ body {
 }
 
 .card, #targetCard {
-    width: 100px;
+    width: 100px;     /* 1:1 비율 */
     height: 100px;
     cursor: pointer;
     object-fit: cover;
@@ -25,6 +25,12 @@ body {
 
 .card:hover {
     transform: scale(1.1);
+}
+
+#cardDescription {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
 }
 
 #status {
