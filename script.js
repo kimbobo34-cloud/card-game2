@@ -46,5 +46,4 @@ function flipCard(card) {
 
 document.getElementById('restartBtn').addEventListener('click', startGame);
 
-// 게임 시작
 startGame();
