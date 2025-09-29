@@ -8,11 +8,9 @@ function startGame() {
     document.getElementById('tries').textContent = tries;
     document.getElementById('medal').textContent = '-';
 
-    // 보기 카드 랜덤 선택
     targetCardId = Math.floor(Math.random() * totalCards) + 1;
     document.getElementById('targetCard').src = `img/${targetCardId}.jpg`;
 
-    // 하단 카드 3장 랜덤 배치 (1장은 보기 카드)
     const choices = new Set();
     choices.add(targetCardId);
     while (choices.size < 3) {
@@ -33,7 +31,7 @@ function startGame() {
 }
 
 function flipCard(card) {
-    if (!card.src.includes('back.jpg')) return; // 이미 뒤집힌 카드 무시
+    if (!card.src.includes('back.jpg')) return;
 
     card.src = `img/${card.dataset.id}.jpg`;
     tries++;
