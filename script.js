@@ -39,7 +39,7 @@ function startGame() {
         const card = document.createElement('img');
         card.className = 'card';
         card.dataset.id = id;
-        card.src = 'img/back.png'; 
+        card.src = 'img/back.png';
         card.addEventListener('click', () => flipCard(card));
         cardsContainer.appendChild(card);
     });
@@ -60,4 +60,5 @@ function flipCard(card) {
 }
 
 document.getElementById('restartBtn').addEventListener('click', startGame);
+
 startGame();
