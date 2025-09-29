@@ -16,7 +16,7 @@ body {
 }
 
 .card, #targetCard {
-    width: 100px;     /* 1:1 비율 */
+    width: 100px;
     height: 100px;
     cursor: pointer;
     object-fit: cover;
