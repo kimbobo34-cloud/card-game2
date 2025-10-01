@@ -9,6 +9,15 @@ body {
     width: 350px;
 }
 
+#gameInfo {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
 #cardsContainer {
     display: flex;
     justify-content: space-around;
