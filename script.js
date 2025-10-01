@@ -53,9 +53,9 @@ function flipCard(card) {
     document.getElementById('tries').textContent = tries;
 
     if (parseInt(card.dataset.id) === targetCardId) {
-        if (tries === 1) document.getElementById('medal').textContent = '금메달';
-        else if (tries === 2) document.getElementById('medal').textContent = '은메달';
-        else document.getElementById('medal').textContent = '동메달';
+        if (tries === 1) document.getElementById('medal').textContent = '금메달🥇';
+        else if (tries === 2) document.getElementById('medal').textContent = '은메달🥈';
+        else document.getElementById('medal').textContent = '동메달🥉';
     }
 }
 
