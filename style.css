@@ -2,20 +2,63 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 #game {
-    margin: 50px auto;
-    width: 350px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 #gameInfo {
     background-color: #e0e0e0;
+    padding: 15px;
     border-radius: 8px;
-    padding: 10px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+#gameInfo h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+#gameInfo p {
+    margin: 5px 0;
     font-size: 14px;
     color: #333;
+}
+
+#targetBox {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#targetCard {
+    width: 25vw;        
+    height: 25vw;
+    max-width: 120px;   
+    max-height: 120px;
+    min-width: 70px;    
+    min-height: 70px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#cardDescription {
+    font-size: 14px;
+    color: #444;
+    margin-top: 5px;
 }
 
 #cardsContainer {
@@ -24,9 +67,13 @@ body {
     margin-top: 20px;
 }
 
-.card, #targetCard {
-    width: 100px;
-    height: 100px;
+.card {
+    width: 20vw;        
+    height: 20vw;       
+    max-width: 100px;   
+    max-height: 100px;
+    min-width: 60px;    
+    min-height: 60px;
     cursor: pointer;
     object-fit: cover;
     transition: transform 0.3s;
@@ -36,20 +83,25 @@ body {
     transform: scale(1.1);
 }
 
-#cardDescription {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
 #status {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
 }
 
 #restartBtn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+#restartBtn:hover {
+    background-color: #555;
 }
