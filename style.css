@@ -8,72 +8,74 @@ body {
 
 #game {
     margin: 20px auto;
-    width: 90%;
-    max-width: 400px;
+    width: 95%;
+    max-width: 1000px; 
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 #gameInfo {
     background-color: #e0e0e0;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 #gameInfo h2 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
+    margin: 0 0 12px 0;
+    font-size: 24px;
 }
 
 #gameInfo p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 6px 0;
+    font-size: 16px;
     color: #333;
 }
 
 #targetBox {
     background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
     text-align: center;
 }
 
 #targetCard {
-    width: 25vw;        
-    height: 25vw;
-    max-width: 120px;   
-    max-height: 120px;
-    min-width: 70px;    
-    min-height: 70px;
+    width: 22vw;
+    height: 22vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 90px;
+    min-height: 90px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 #cardDescription {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     color: #444;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 #cardsContainer {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
 }
 
 .card {
-    width: 20vw;        
-    height: 20vw;       
-    max-width: 100px;   
-    max-height: 100px;
-    min-width: 60px;    
-    min-height: 60px;
+    width: 18vw;
+    height: 18vw;
+    max-width: 150px;  
+    max-height: 150px;
+    min-width: 70px;
+    min-height: 70px;
     cursor: pointer;
     object-fit: cover;
     transition: transform 0.3s;
@@ -84,19 +86,19 @@ body {
 }
 
 #status {
-    margin-top: 15px;
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #222;
 }
 
 #restartBtn {
-    margin-top: 15px;
-    padding: 8px 15px;
-    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #333;
     color: #fff;
     transition: background-color 0.2s;
