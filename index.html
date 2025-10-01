@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="game">
+
         <div id="gameInfo">
-            <h2>카드 맞추기 게임 🃏</h2>
+            <h2> 카드 맞추기 게임🖤 </h2>
             <p>보기 카드와 일치하는 카드를 찾으면 메달 획득🏆</p>
             <p>
                 1회차 성공 → 금메달🥇 <br>
@@ -18,15 +19,20 @@
             </p>
         </div>
 
-        <img id="targetCard" src="images/back.png" alt="Target Card">
+        <div id="targetBox">
+            <img id="targetCard" src="img/back.png" alt="Target Card">
+            <div id="cardDescription"></div>
+        </div>
 
         <div id="cardsContainer"></div>
 
-        <div id="cardDescription"></div>
-
-        <div id="status"></div>
+        <div id="status">
+            <p>시도: <span id="tries">0</span></p>
+            <p>메달: <span id="medal"></span></p>
+        </div>
 
         <button id="restartBtn">다시 시작</button>
+
     </div>
 
     <script src="script.js"></script>
